@@ -14,4 +14,6 @@ This project helped me strengthen my understanding of:
  ✔ CSS positioning & animations
 I really enjoyed turning logic into an interactive game experience. 🚀
  Always excited to learn more and build better projects!
-💻 Tech Stack: HTML | CSS | JavaScript
+💻 Tech Stack: HTML | CSS | Jav<img width="1275" height="889" alt="Car Game v0 3" src="https://github.com/user-attachments/assets/64d01590-85c6-47bc-abf7-b6639edda10a" />
+aScript
+
