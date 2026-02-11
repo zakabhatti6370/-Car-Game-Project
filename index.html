@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>Car Racing Game</title>
+</head>
+<body>
+    <img id="back-123" src="img/Background.jpg" alt="">
+    <img id="car-123" src="img/Car-saf.png" alt="">
+    
+    <div class="top-section">
+        <div class="player-section">
+            <input type="text" id="playerName" placeholder="Enter your name" maxlength="20">
+            <button onclick="setPlayerName()">Set Name</button>
+        </div>
+        <h1 class="hading-title">Overtake the Traffic</h1>
+        <h2>Player: <span id="displayName">Player</span></h2>
+        <h2>Score: <span id="score">0</span></h2>
+    </div>
+    
+    <canvas id="gameCanvas"></canvas>
+    
+    <div class="controls">
+        <button onclick="resetGame()">Reset Game</button>
+        <button onclick="startGame()">New Game</button>
+    </div>
+    
+    <div class="history-section">
+        <img src="img/Dollar Banknote.png" alt="">
+        <p class="Balance">Total Belance</p>
+        <div class="history-header">
+            <h3>🏆 Top Scores</h3> <span>50Rs </span>
+            <button onclick="toggleHistory()" class="toggle-history-btn" id="toggleBtn">▼</button>
+        </div>
+        <div id="historyContent" class="history-content">
+            <button onclick="openHistoryModal()" class="open-history-btn">👁️ View Full</button>
+            <button onclick="resetHistory()" class="reset-history-btn">🗑️ Reset</button>
+            <table id="scoresTable">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>Score</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="scoresBody">
+                <tr><td colspan="4">No scores yet</td></tr>
+            </tbody>
+        </table>
+        </div>
+        <!-- Payment Window -->
+<div id="paymentModal" class="payment-modal">
+    <div class="payment-box">
+        <h2>Payment Successful</h2>
+        <p id="paymentMessage">
+            50 Rs has been added to your account.
+        </p>
+        <button onclick="closePaymentModal()">OK</button>
+    </div>
+</div>
+
+    </div>
+
+    
+    <!-- History Modal -->
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeHistoryModal()">&times;</span>
+            <h2>Full Score History</h2>
+            <button onclick="resetHistory()" class="reset-history-btn">Reset All History</button>            <table id="fullScoresTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="fullScoresBody">
+                    <tr><td colspan="4">No scores yet</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<div class="wallet-section">
+    <h2>Wallet Balance: <span id="walletBalance">0</span> Rs</h2>
+    <button onclick="addMoney(50)">Add 50 Rs</button>
+    <img src="img/Dollar Coin stack.png" alt="" >
+    <i class="fa-solid fa-sack-dollar"></i>
+</div>
+<div class="mobile-controls">
+    <button class="ctrl-btn" id="btn-up">▲</button>
+    <div class="middle-row">
+        <button class="ctrl-btn" id="btn-left">◀</button>
+        <button class="ctrl-btn" id="btn-right">▶</button>
+    </div>
+    <button class="ctrl-btn" id="btn-down">▼</button>
+</div>
+
+
+
+    <div class="footer">
+        <div class="social-media">
+            Developed by ZakaUllah Bhatti 
+            phone number +923216926370
+            <a href="https://www.linkedin.com/in/zakaullah-bhatti-700589294"><img src="img/linkdend.png" alt=""></a>
+            <a href="https://web.facebook.com/zakaullahbhatti0786"><img src="img/facebook.png" alt=""></a>
+            <a href="http://"><img src="img/instagram.png" alt=""></a>
+
+        </div>
+        <p>&copy; 2026 Car Racing Game. All rights reserved.</p>
+    </div>
+    
+  
+  
+    <script src="script/script.js"></script>
+</body>
+</html>
