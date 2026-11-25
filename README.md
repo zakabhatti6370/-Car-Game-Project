@@ -1,4 +1,18 @@
-﻿# -Car-Game-Project
+### Hi there, I'm Zaka Ullah Bhatti
+
+Front-end web developer building clean web interfaces, interactive browser tools, and practical utilities using **HTML5**, **CSS3**, **JavaScript**, and **Python**.
+
+- **Portfolio & Work:** [My Portfolio](https://github.com/zakabhatti6370/My-portfolio)
+- **Blog & Resources:** [GSM Tested File](https://gsm-testedfile.blogspot.com/)
+
+#### What I Build
+
+- Responsive front-end websites and UI components
+- Interactive browser apps, canvas games, and performance/utility tools
+- Python and technical scripts for practical workflows
+
+- -----------------------------------------------------------------------------------------------------------------
+ # -Car-Game-Project
  🚗 Car Racing Game – My Web Development Project 🎮
 Last year, I built a Car Racing Game using HTML, CSS, and JavaScript as part of my learning and practice in web development.
 ✨ Key Features: update v 0.3 Coming Sone latest version
